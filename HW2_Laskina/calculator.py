@@ -4,6 +4,9 @@ def div(x: float, y: float) -> float:
         raise ZeroDivisionError("Division by zero is not allowed")
     return x / y
 
+def add(x: float, y: float) -> float:
+    return x + y
+
 def parse_number(token: str):
     if "." in token or "e" in token.lower():
         return float(token)
