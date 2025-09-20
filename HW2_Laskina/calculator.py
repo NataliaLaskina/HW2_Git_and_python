@@ -1,3 +1,13 @@
+correct_oper = ["+", "-", "*", "/"]
+def div(x: float, y: float) -> float:
+    if y == 0:
+        raise ZeroDivisionError("Division by zero is not allowed")
+    return x / y
+
+def parse_number(token: str):
+    if "." in token or "e" in token.lower():
+        return float(token)
+    return int(token)
 def main():
     while True:
         calc = input("Enter an expression like: <number> <operator> <number>\n"
