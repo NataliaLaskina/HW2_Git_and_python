@@ -10,6 +10,9 @@ def add(x: float, y: float) -> float:
 def mul(x: float, y: float) -> float:
     return x * y
 
+def sub(x: float, y: float) -> float:
+    return x - y
+
 def parse_number(token: str):
     if "." in token or "e" in token.lower():
         return float(token)
